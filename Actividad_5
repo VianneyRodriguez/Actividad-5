@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+void main()
+
+{
+	system ("color 1B");
+	
+	unsigned char eleccionDelComprador;
+	printf("\ntenemos: \n\t1- Sueter \n\t2- Camisa \n\t3- Pantalon \n\t4- Calcetines \n\t5- Calsones \n\n\tElija: ");
+
+	scanf("%d", &eleccionDelComprador );
+	
+	if (eleccionDelComprador < 6 && eleccionDelComprador > 0)
+	{
+			if(eleccionDelComprador == 1)
+	{
+		printf("\n\t\t Compro un Sueter");
+	}else if ( eleccionDelComprador == 2)
+	{
+		printf("\n\t\t Compro una Camisa");
+	}else if (eleccionDelComprador == 3)
+	{
+		printf("\n\t\t Compro un Pantalon");
+	}else if (eleccionDelComprador == 4)
+	{
+		printf("\n\t\t Compro unos Calcetines");
+	}else
+	{
+		printf("\n\t\t Compro unos Calsones");
+	}
+	}else {printf ("\n\t\t No tenemos");
+	}
+}
